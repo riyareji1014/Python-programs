@@ -3,7 +3,7 @@ from abc import ABC,abstractmethod
 class Shape(ABC):
     def area(self):
         print("calculating the areas")
-class Circle(Shape):
+class Circles(Shape):
     def __init__(self,r):
         self.r=r
     def area(self):
@@ -13,7 +13,7 @@ class Square(Shape):
         self.s=s 
     def area(self): 
         print("the area of the square:",self.s**2) 
-c=Circle(6)
+c=Circles(6)
 s=Square(4)
 c.area()
 s.area()                             
